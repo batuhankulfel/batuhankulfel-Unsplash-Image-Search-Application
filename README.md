@@ -1,4 +1,4 @@
-# Steps to run this application
+# Steps To Run This Application
 
 
 - Add your Unsplash Api key in .Api file
