@@ -1,8 +1,9 @@
 import { Card, CardMedia } from "@mui/material";
 
-function ImageItem({ image }) {
+function ImageItem({ image, onClick }) {
   return (
     <Card
+      onClick={onClick}
       sx={{
         borderRadius: 3,
         overflow: "hidden",

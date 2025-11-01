@@ -1,7 +1,7 @@
 import ImageItem from "./ImageItem";
 import { Box, Container } from "@mui/material";
 
-function ImageList({ imagesPlaceholder }) {
+function ImageList({ imagesPlaceholder, onImageClick }) {
   if (!imagesPlaceholder || imagesPlaceholder.length === 0) {
     return null;
   }
@@ -19,7 +19,13 @@ function ImageList({ imagesPlaceholder }) {
         }}
       >
         {imagesPlaceholder.map((image, index) => {
-          return <ImageItem key={image.id || index} image={image} />;
+          return (
+            <ImageItem
+              key={image.id || index}
+              image={image}
+              onClick={() => onImageClick(image)}
+            />
+          );
         })}
       </Box>
     </Container>
