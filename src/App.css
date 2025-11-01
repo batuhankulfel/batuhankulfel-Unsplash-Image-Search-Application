@@ -1,4 +1,4 @@
-@import url("../node_modules/bootstrap/");
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
 .App {
   margin: 10px;
   padding: 10px;

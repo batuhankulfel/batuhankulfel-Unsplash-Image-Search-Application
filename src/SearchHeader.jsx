@@ -5,7 +5,6 @@ function SearchHeader({ search }) {
   const [valueInput, setValue] = useState("");
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    debugger;
     search(valueInput);
   };
   const handleChange = (event) => {
