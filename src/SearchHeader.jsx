@@ -28,6 +28,7 @@ function SearchHeader({ search }) {
         background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
         padding: { xs: 4, md: 6 },
         boxShadow: 3,
+        whiteSpace: "nowrap",
       }}
     >
       <Container maxWidth="md">
@@ -112,7 +113,8 @@ function SearchHeader({ search }) {
                 fontWeight: 600,
                 fontSize: "1rem",
                 "&:hover": {
-                  background: "linear-gradient(135deg, #5568d3 0%, #6a3f91 100%)",
+                  background:
+                    "linear-gradient(135deg, #5568d3 0%, #6a3f91 100%)",
                   transform: "scale(1.05)",
                   boxShadow: 6,
                 },
