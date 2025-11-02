@@ -54,7 +54,7 @@ function SearchHeader({ search }) {
             variant="h6"
             sx={{
               mb: 4,
-              color: "rgba(255,255,255,0.9)",
+              color: "rgba(255,255,255,1 )",
               fontWeight: 300,
               fontSize: { xs: "1rem", md: "1.2rem" },
             }}
