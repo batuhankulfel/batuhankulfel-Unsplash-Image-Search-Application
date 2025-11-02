@@ -35,7 +35,7 @@ function SearchHeader({ search }) {
         <Box
           sx={{
             textAlign: "center",
-            color: "white",
+            color: "black",
           }}
         >
           <Typography
