@@ -14,6 +14,7 @@ function ImageList({ imagesPlaceholder, onImageClick }) {
           columnGap: 3,
           "& > *": {
             breakInside: "avoid",
+            display: "inline-block",
             mb: 3,
           },
         }}
