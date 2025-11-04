@@ -29,6 +29,7 @@ function SearchHeader({ search }) {
         padding: { xs: 4, md: 6 },
         boxShadow: 3,
         whiteSpace: "nowrap",
+        scaleY: 1,
       }}
     >
       <Container maxWidth="md">
