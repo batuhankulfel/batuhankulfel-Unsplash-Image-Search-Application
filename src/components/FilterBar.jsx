@@ -34,6 +34,7 @@ function FilterBar({ sortBy, setSortBy, orderBy, setOrderBy, imageCount }) {
     { value: "latest", label: "Latest", icon: LocalFireDepartment },
     { value: "popular", label: "Most Popular", icon: TrendingUp },
     { value: "oldest", label: "Oldest", icon: AccessTime },
+    { value: "ss", label: "ss", icon: AccessTime },
   ];
 
   return (
@@ -51,7 +52,13 @@ function FilterBar({ sortBy, setSortBy, orderBy, setOrderBy, imageCount }) {
     >
       <Container maxWidth="xl">
         <Stack spacing={3}>
-          <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
             <Typography
               variant="h6"
               sx={{
@@ -65,7 +72,8 @@ function FilterBar({ sortBy, setSortBy, orderBy, setOrderBy, imageCount }) {
               <Box
                 component="span"
                 sx={{
-                  background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                  background:
+                    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
                   borderRadius: "8px",
                   px: 2,
                   py: 0.5,
@@ -75,7 +83,11 @@ function FilterBar({ sortBy, setSortBy, orderBy, setOrderBy, imageCount }) {
               >
                 {imageCount}
               </Box>
-              <Typography variant="body2" component="span" sx={{ fontWeight: 400 }}>
+              <Typography
+                variant="body2"
+                component="span"
+                sx={{ fontWeight: 400 }}
+              >
                 beautiful images found
               </Typography>
             </Typography>
@@ -83,7 +95,9 @@ function FilterBar({ sortBy, setSortBy, orderBy, setOrderBy, imageCount }) {
             <Button
               onClick={handleOrderChange}
               variant="outlined"
-              startIcon={orderBy === "asc" ? <ArrowUpward /> : <ArrowDownward />}
+              startIcon={
+                orderBy === "asc" ? <ArrowUpward /> : <ArrowDownward />
+              }
               sx={{
                 borderRadius: "20px",
                 textTransform: "none",
@@ -126,7 +140,9 @@ function FilterBar({ sortBy, setSortBy, orderBy, setOrderBy, imageCount }) {
                   <Chip
                     key={option.value}
                     label={
-                      <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+                      <Box
+                        sx={{ display: "flex", alignItems: "center", gap: 0.5 }}
+                      >
                         <Icon fontSize="small" />
                         {option.label}
                       </Box>
@@ -140,10 +156,12 @@ function FilterBar({ sortBy, setSortBy, orderBy, setOrderBy, imageCount }) {
                       transition: "all 0.3s ease",
                       ...(isSelected
                         ? {
-                            background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                            background:
+                              "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
                             color: "white",
                             "&:hover": {
-                              background: "linear-gradient(135deg, #5568d3 0%, #6a3f91 100%)",
+                              background:
+                                "linear-gradient(135deg, #5568d3 0%, #6a3f91 100%)",
                               transform: "translateY(-2px)",
                               boxShadow: 4,
                             },
@@ -173,4 +191,3 @@ function FilterBar({ sortBy, setSortBy, orderBy, setOrderBy, imageCount }) {
 }
 
 export default FilterBar;
-
