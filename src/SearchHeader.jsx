@@ -27,9 +27,6 @@ function SearchHeader({ search }) {
       sx={{
         background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
         padding: { xs: 4, md: 6 },
-        boxShadow: 3,
-        whiteSpace: "nowrap",
-        scaleY: 1,
       }}
     >
       <Container maxWidth="md">
@@ -37,6 +34,7 @@ function SearchHeader({ search }) {
           sx={{
             textAlign: "center",
             color: "black",
+            py: { xs: 6, md: 8 },
           }}
         >
           <Typography
