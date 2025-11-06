@@ -14,6 +14,7 @@ const theme = createTheme({
     },
     secondary: {
       main: "#764ba2",
+      accent: "#ff4081",
     },
   },
   typography: {
@@ -66,7 +67,10 @@ function App() {
     }
 
     setFavorites(updatedFavorites);
-    localStorage.setItem("unsplash_favorites", JSON.stringify(updatedFavorites));
+    localStorage.setItem(
+      "unsplash_favorites",
+      JSON.stringify(updatedFavorites)
+    );
   };
 
   const isImageFavorite = (image) => {
@@ -76,7 +80,7 @@ function App() {
   // Sıralama işlemi
   const sortedImages = useMemo(() => {
     const sorted = [...images];
-    
+
     switch (sortBy) {
       case "latest":
         sorted.sort((a, b) => {
@@ -101,7 +105,7 @@ function App() {
         // relevance - varsayılan sıralama
         break;
     }
-    
+
     return sorted;
   }, [images, sortBy, orderBy]);
 
@@ -122,7 +126,10 @@ function App() {
           setOrderBy={setOrderBy}
           imageCount={images.length}
         />
-        <ImageList imagesPlaceholder={sortedImages} onImageClick={handleImageClick} />
+        <ImageList
+          imagesPlaceholder={sortedImages}
+          onImageClick={handleImageClick}
+        />
         {selectedImage && (
           <ImageModal
             image={selectedImage}
