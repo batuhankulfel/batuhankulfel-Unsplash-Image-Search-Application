@@ -1,3 +1,9 @@
 ::-webkit-validation-bubble-arrow-clipper {
   display: none;
 }
+:where(.Mui-focused) {
+  outline: none;
+}
+:where(.Mui-focused)::after {
+  outline: none;
+}
