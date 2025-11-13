@@ -19,3 +19,6 @@
   ) {
   transition: background-color 5000s ease-in-out 0s;
 }
+feColorMatrix {
+  color-interpolation-filters: sRGB;
+}
