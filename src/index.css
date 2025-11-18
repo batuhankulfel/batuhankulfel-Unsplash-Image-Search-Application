@@ -21,4 +21,5 @@
 }
 feColorMatrix {
   color-interpolation-filters: sRGB;
+  function: linearRGB;
 }
