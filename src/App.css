@@ -1,2 +1,11 @@
 /* Material UI kullanıldığı için bu CSS dosyası artık kullanılmıyor */
 /* Stiller Material UI'nin sx prop'u ile tanımlanmıştır */
+canvas {
+  border: 1px solid #000;
+}
+svg {
+  border: 1px solid #000;
+}
+button {
+  cursor: pointer;
+}
